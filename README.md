@@ -8,20 +8,24 @@ with the specifications of Door Locker Security System  to unlock a door using a
 **Mc1 → HMI_ECU (Human Machine Interface)** with 2x16 LCD and 4x4 keypad.
 **HMI_ECU** is just responsible interaction with the user just take inputs through keypad and display messages on the LCD.
 
+
+![image](https://github.com/YoussefGobran/Door_Locker_Security_Systems/assets/132088403/d4c8a61c-5738-490e-ac09-c0e07c7c291b)
+
 **Mc2 → Control_ECU** with EEPROM, Buzzer, and Dc-Motor.
 **CONTROL_ECU** is responsible for all the processing and decisions in the system like password checking, open the door and activate the system alarm.
 
+![image](https://github.com/YoussefGobran/Door_Locker_Security_Systems/assets/132088403/90fbf803-525d-434d-9235-019aeeb18437)
 
 ## **System Sequence:**
 
 ```
 Step1 – Create a System Password
 ```
-- The LCD should display “Please Enter Password” like that:
+- The LCD should display “Please Enter Password”.
 - Enter a password consists of 5 numbers, Display * in the screen for each number.
 - Press **enter** button (choose any button in the keypad as enter button).
 - Ask the user to renter the same password for confirmation by display this message
-    “Please re-enter the same Pass”:
+    “Please re-enter the same Pass”.
 - Enter a password consists of 5 numbers, Display * in the screen for each number.
 - Press **enter** button (choose any button in the keypad as enter button).
 - **HMI_ECU** should send the two passwords to the **Control_ECU** through the **UART**.
@@ -34,12 +38,14 @@ Step1 – Create a System Password
 Step2 - Main Options
 ```
 - The LCD will always display the main system option:
+  
+![image](https://github.com/YoussefGobran/Door_Locker_Security_Systems/assets/132088403/7e0494aa-c6c5-4b04-9627-50a0933d3a76)
 
 ```
 Step3 - Open Door (+)
 ```
 
-- The LCD should display “Please Enter Password” like that:
+- The LCD should display “Please Enter Password”.
 - Enter the password then press **enter** button (choose any button in the keypad as
     enter button).
 - **HMI_ECU** should send the Password to the **Control_ECU** and it should compare it
@@ -55,8 +61,7 @@ Step3 - Open Door (+)
 Step 4 - Change Password -
 ```
 
-- The LCD should display “Please Enter Password” like that:
--
+- The LCD should display “Please Enter Password”.
 - Enter the password then press **enter** button (choose any button in the keypad as
     enter button).
 - **HMI_ECU** should send the Password to the **Control_ECU** and it should compare it
