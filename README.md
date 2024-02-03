@@ -60,7 +60,7 @@ Step3 - Open Door (+)
        “Door is Locking”
 
 ```
-Step 4 - Change Password -
+Step 4 - Change Password (-)
 ```
 
 - The LCD should display “Please Enter Password”.
