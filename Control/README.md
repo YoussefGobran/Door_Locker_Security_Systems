@@ -1,6 +1,8 @@
 # CONTROL_ECU 
-
-CONTROL_ECU of frequency 8Mhz is responsible for all the processing and decisions in the system 
+```
+frequency 8Mhz
+```
+**CONTROL_ECU** is responsible for all the processing and decisions in the system 
 like password checking, open the door and activate the system alarm.
 
 Using Hardware as EEPROM, Buzzer, and Dc-Motor.
